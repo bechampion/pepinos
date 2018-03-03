@@ -1,3 +1,4 @@
+@Library('pipeline-library-demo')_
 node {
     stage "Create build output"
     
@@ -13,9 +14,4 @@ node {
 
 		stage "whatever"
 		sh "ls"
-	@Library('pipeline-library-demo')_
-	stage('Demo') {
-    echo 'Hello world'
-    sayHello 'Dave'
-	}
 }
