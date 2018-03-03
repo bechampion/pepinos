@@ -1,9 +1,8 @@
 @Library('pipeline-library-demo')_
 node {
-		stage ('Demo') {
+		stage 'Demo'
 		echo 'dada'
 		sayHello 'Dave'
-}
     stage "Create build output"
     
     sh "mkdir -p output"
